@@ -1,0 +1,164 @@
+# Technical Specification
+
+## Project Name: GoalKeeper: A Personal ADHD Coaching Bot
+
+## Overview
+
+GoalKeeper is a full-stack application designed as a personal ADHD coaching bot. The app reminds users of their daily tasks and long-term goals, engages them based on set frequency and priority, and holds them accountable for their tasks. The app will employ techniques known to assist people with ADHD, effectively acting as an automated personal coach.
+
+## Communication Method
+
+The bot will communicate with the user through a mobile app. The mobile application offers a flexible, convenient, and ubiquitous way for users to interact with the bot. Notifications will be used to engage the user, remind them of their tasks, and check in on their progress.
+
+## Tech Stack
+
+1. **Frontend**: React Native will be used for creating the mobile application. React Native allows us to write one codebase that works on both Android and iOS, saving time and resources. 
+
+2. **Backend**: Node.js with Express.js will be used for the backend. It's a popular, lightweight, and efficient option for creating APIs.
+
+3. **Database**: MongoDB will be used to store user data, including their goals, task lists, and interaction history with the bot.
+
+4. **AI/ML**: OpenAI's GPT-3 will be used to enable the bot to communicate effectively with the user. 
+
+5. **Notifications**: Firebase Cloud Messaging will be used for sending notifications to the user's mobile device.
+
+## Software Architecture
+
+![Software Architecture](https://miro.medium.com/max/1200/1*QV1NogkluXQI2O2y8GmT_Q.png)
+
+1. The client interacts with the application through the React Native mobile app.
+2. User requests and bot communications are handled by the Node.js/Express.js server.
+3. Data is stored and retrieved from a MongoDB database.
+4. The server communicates with GPT-3 to facilitate intelligent, human-like communication with the user.
+5. Firebase Cloud Messaging is used to send notifications to the user's device.
+
+## File Structure
+
+```
+GoalKeeper/
+├── README.md
+├── package.json
+├── client/
+│   ├── App.js
+│   ├── components/
+│   │   ├── Home.js
+│   │   ├── TaskList.js
+│   │   ├── GoalList.js
+│   │   ├── AddTask.js
+│   │   ├── AddGoal.js
+│   │   └── Settings.js
+│   └── assets/
+│       └── images/
+├── server/
+│   ├── server.js
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Task.js
+│   │   └── Goal.js
+│   └── controllers/
+│       ├── userController.js
+│       ├── taskController.js
+│       └── goalController.js
+└── test/
+    ├── client/
+    │   └── App.test.js
+    └── server/
+        └── server.test.js
+```
+
+## README.md
+
+```
+# GoalKeeper: A Personal ADHD Coaching Bot
+
+## Description
+
+GoalKeeper is a full-stack application that acts as a personal coach for users with ADHD. It reminds them of their tasks, helps them set and track their goals, and checks in on them to hold them accountable. The bot communicates with the user through a mobile app, offering a flexible and ubiquitous method of engagement.
+
+## Features
+
+- Task setting and reminders
+- Goal setting and progress tracking
+- User engagement based on set frequency and priority
+- AI-powered chat functionality for task and goal discussions
+- Notifications for task reminders and check-ins
+
+## Tech Stack
+
+- React Native
+
+# Technical Specification
+
+## Project Name: ADHD Helper
+
+## Overview:
+ADHD Helper is a full-stack application that acts as an automated assistant to help users manage their daily tasks and achieve their long-term goals. It employs various techniques known to help ADHD, like ADHD coaching, to remind users of their daily tasks and constantly reinforce their long-term goals. The application will prioritize user engagement based on set frequencies and priorities. Communication with the user will be implemented through a mobile application for maximum accessibility and convenience.
+
+## Tech Stack:
+
+1. **Frontend:** React Native (for cross-platform mobile application development)
+2. **Backend:** Node.js with Express.js (for REST API)
+3. **Database:** MongoDB (for storing user data, tasks, and reminders)
+4. **Authentication:** Firebase Authentication (for user authentication)
+5. **Push Notifications:** Firebase Cloud Messaging (for sending reminders and check-ins)
+6. **State Management:** Redux (for managing application state)
+
+## Software Architecture:
+
+1. **Frontend (Mobile Application):**
+    - The mobile application will be developed using React Native, allowing for iOS and Android compatibility.
+    - Redux will be used for state management.
+
+2. **Backend (API):**
+    - The backend will be developed using Node.js with Express.js to provide a RESTful API.
+    - The API will handle user registration, login, task creation, task updates, and sending notifications.
+
+3. **Database:**
+    - MongoDB will be used to store user data, including login credentials, user tasks, and reminders.
+    - Mongoose will be used as an object modeling tool for MongoDB.
+
+4. **Authentication and Notifications:**
+    - Firebase Authentication will be used for user authentication.
+    - Firebase Cloud Messaging will be used for sending push notifications to users for reminders and check-ins.
+
+## File Structure:
+
+```
+ADHD-Helper/
+|-- frontend/
+|   |-- src/
+|   |   |-- components/
+|   |   |   |-- Task.js
+|   |   |   |-- TaskList.js
+|   |   |   |-- LoginForm.js
+|   |   |   |-- RegisterForm.js
+|   |   |   |-- GoalSettingForm.js
+|   |   |-- redux/
+|   |   |   |-- actions/
+|   |   |   |   |-- index.js
+|   |   |   |-- reducers/
+|   |   |   |   |-- index.js
+|   |   |-- App.js
+|   |-- package.json
+|-- backend/
+|   |-- src/
+|   |   |-- models/
+|   |   |   |-- User.js
+|   |   |   |-- Task.js
+|   |   |-- routes/
+|   |   |   |-- users.js
+|   |   |   |-- tasks.js
+|   |   |-- app.js
+|   |-- package.json
+|-- README.md
+```
+
+## User Interface:
+The user interface will be clean and minimal to avoid overwhelming users. It will allow users to add tasks/goals, set reminders, view progress, and receive notifications. The design will follow the guidelines for designing applications for users with ADHD, which includes clear and focused goal setting, reducing options, using progress bars, and not overloading the user with information across platforms【8†source】.
+
+## README:
+The README file will include a detailed description of the project, instructions for setting up and running the application, and an overview of the file structure.
+
+---
+
+This specification outlines the basic structure and technology stack for the ADHD Helper application. Additional details, such as specific API endpoints, database schemas, and UI/UX details will be determined as the project progresses.
