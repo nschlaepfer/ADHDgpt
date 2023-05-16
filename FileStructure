@@ -1,0 +1,31 @@
+## File Structure:
+
+```
+ADHD-Helper/
+|-- frontend/
+|   |-- src/
+|   |   |-- components/
+|   |   |   |-- Task.js
+|   |   |   |-- TaskList.js
+|   |   |   |-- LoginForm.js
+|   |   |   |-- RegisterForm.js
+|   |   |   |-- GoalSettingForm.js
+|   |   |-- redux/
+|   |   |   |-- actions/
+|   |   |   |   |-- index.js
+|   |   |   |-- reducers/
+|   |   |   |   |-- index.js
+|   |   |-- App.js
+|   |-- package.json
+|-- backend/
+|   |-- src/
+|   |   |-- models/
+|   |   |   |-- User.js
+|   |   |   |-- Task.js
+|   |   |-- routes/
+|   |   |   |-- users.js
+|   |   |   |-- tasks.js
+|   |   |-- app.js
+|   |-- package.json
+|-- README.md
+```
